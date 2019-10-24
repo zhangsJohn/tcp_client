@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout" columnstretch="1,0">
+    <item row="0" column="1">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="title">
+       <string>参数选择</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <layout class="QFormLayout" name="formLayout">
+       <property name="leftMargin">
+        <number>2</number>
+       </property>
+       <property name="topMargin">
+        <number>2</number>
+       </property>
+       <property name="rightMargin">
+        <number>2</number>
+       </property>
+       <property name="bottomMargin">
+        <number>2</number>
+       </property>
+       <item row="0" column="0" colspan="2">
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tab_3">
+          <attribute name="title">
+           <string>通信配置</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_3" columnstretch="0,2,1,1">
+           <item row="6" column="0" colspan="4">
+            <widget class="Line" name="line">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="2">
+            <widget class="QPushButton" name="recPB">
+             <property name="text">
+              <string>接收数据</string>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="3">
+            <widget class="QPushButton" name="stopPB">
+             <property name="text">
+              <string>停止接收</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0">
+            <widget class="QLabel" name="timeLabel">
+             <property name="text">
+              <string>时间常数</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>触发模式</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QPushButton" name="getLocalPB">
+             <property name="text">
+              <string>获取本机IP</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1" colspan="2">
+            <widget class="QLineEdit" name="local_ip_LE"/>
+           </item>
+           <item row="9" column="3">
+            <widget class="QPushButton" name="sendPB">
+             <property name="text">
+              <string>发送数据</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="3">
+            <widget class="QCheckBox" name="hexCKB">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>hex模式</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="2">
+            <widget class="QPushButton" name="connectPB">
+             <property name="text">
+              <string>连接网络</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1" colspan="3">
+            <widget class="QLineEdit" name="des_ip_LE">
+             <property name="text">
+              <string>127.0.0.1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="1" colspan="3">
+            <widget class="QComboBox" name="trigModCB">
+             <item>
+              <property name="text">
+               <string>内触发</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>外触发</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>助手模式</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="4" column="1" colspan="2">
+            <widget class="QLineEdit" name="portLE">
+             <property name="text">
+              <string>8951</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>目标IP</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="3">
+            <widget class="QComboBox" name="timeModCB">
+             <item>
+              <property name="text">
+               <string>低模式</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>高模式</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>本机IP</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="1" colspan="2">
+            <widget class="QLineEdit" name="timeLE">
+             <property name="placeholderText">
+              <string>时间单位 us</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="3">
+            <widget class="QPushButton" name="discPB">
+             <property name="text">
+              <string>断开网络</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="3">
+            <widget class="LedIndicator" name="stateLed">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>端口号</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="0" rowspan="2" colspan="3">
+            <widget class="QPlainTextEdit" name="sendTE">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_4">
+          <attribute name="title">
+           <string>Tab 2</string>
+          </attribute>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string>状态信息</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="leftMargin">
+        <number>2</number>
+       </property>
+       <property name="topMargin">
+        <number>2</number>
+       </property>
+       <property name="rightMargin">
+        <number>2</number>
+       </property>
+       <property name="bottomMargin">
+        <number>2</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QTextBrowser" name="msgTB"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0" rowspan="2">
+     <widget class="PlotWidget" name="plotView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionInput"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionInput">
+   <property name="text">
+    <string>输入</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QGraphicsView</extends>
+   <header>pyqtgraph.h</header>
+  </customwidget>
+  <customwidget>
+   <class>LedIndicator</class>
+   <extends>QRadioButton</extends>
+   <header>LedIndicatorWidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
